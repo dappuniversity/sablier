@@ -27,7 +27,6 @@ module.exports = async function(callback) {
     /** Getting stream data
       *
       * Logging relevant info. about stream with provided ID.
-      *
       */
     const result = await sablier.methods.getStream(streamId).call()
     //check if stream hasn't finished

@@ -10,7 +10,7 @@ const weth = new web3.eth.Contract(weth_ABI, weth_address);
   *
   * Script:
   * converts ETH to WETH
-  * approves Sablier protocols to spend WETH
+  * approves Sablier protocol to spend WETH
   * creates the money stream from "sender" to "recipient"
   *
   * After stream creation, "recipient" will start receiving 1 wei/s.
@@ -18,7 +18,6 @@ const weth = new web3.eth.Contract(weth_ABI, weth_address);
   *
   * command: truffle exec scripts/1_send.js --network ropsten
   */
-
 module.exports = async function(callback) {
   try {
     // Get Accounts
